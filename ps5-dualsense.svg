@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1400" width="1000" height="700" role="img" aria-labelledby="title desc">
+  <title id="title">PS5 DualSense 무선 컨트롤러</title>
+  <desc id="desc">화이트 투톤 DualSense 컨트롤러를 위에서 내려다본 일러스트. 터치패드 양옆 라이트 바, 방향키, 액션 버튼, 아날로그 스틱 두 개, PS 버튼, 음소거 버튼, 만들기·옵션 버튼을 포함.</desc>
+  <defs>
+    <!-- 공용 도형 (0.1 mm 단위, 본체 폭 160 mm) -->
+    <path id="body-shape" d="M 800 30 C 700 30 570 32 480 36 C 330 40 170 42 95 100 C 35 145 8 230 5 330 C 2 450 25 580 62 690 C 98 800 118 935 165 1005 C 205 1065 320 1080 365 1030 C 405 985 435 870 495 800 C 560 735 690 742 800 742 C 910 742 1040 735 1105 800 C 1165 870 1195 985 1235 1030 C 1280 1080 1395 1065 1435 1005 C 1482 935 1502 800 1538 690 C 1575 580 1598 450 1595 330 C 1592 230 1565 145 1505 100 C 1430 42 1270 40 1120 36 C 1030 32 900 30 800 30 Z"/>
+    <path id="touchpad-shape" d="M 562 42 C 680 36 920 36 1038 42 C 1050 43 1058 50 1057 62 L 1013 350 C 1009 378 992 392 968 396 C 880 412 720 412 632 396 C 608 392 591 378 587 350 L 543 62 C 542 50 550 43 562 42 Z"/>
+    <path id="wing-left-shape" d="M 512 -60 L 516 60 L 560 345 C 566 385 556 425 515 440 C 420 470 375 520 375 600 C 375 690 410 745 452 778 C 420 850 398 935 377 1015 L 340 1160 L -120 1160 L -120 -60 Z"/>
+    <path id="wing-right-shape" d="M 1088 -60 L 1084 60 L 1040 345 C 1034 385 1044 425 1085 440 C 1180 470 1225 520 1225 600 C 1225 690 1190 745 1148 778 C 1180 850 1202 935 1223 1015 L 1260 1160 L 1720 1160 L 1720 -60 Z"/>
+    <path id="lightbar-left-shape" d="M 531 66 L 575 351 C 579 377 593 393 612 401"/>
+    <path id="lightbar-right-shape" d="M 1069 66 L 1025 351 C 1021 377 1007 393 988 401"/>
+    <g id="ps-logo-shape"><path d="M -8 12 L -16 12 C -38 14 -60 20 -68 28 C -71 32 -66 34 -58 33 C -44 32 -30 31 -16 31 L -8 31 Z"/><path d="M -4 22 L 4 22 C 28 20 54 17 64 12 C 70 9 72 14 66 20 C 52 34 20 46 -16 49 L -16 36 Z"/><path d="M -16 -50 L 4 -50 C 33 -51 48 -42 48 -27 C 48 -11 33 -3 12 -4 L 4 -4 L 4 36 L -16 42 Z M 4 -37 C 19 -38 27 -34 27 -27 C 27 -19 19 -16 4 -16 Z"/></g>
+    <path id="dpad-up-shape" d="M 272 209 Q 300 203 328 209 Q 339 211 339 222 L 339 278 L 306 309 Q 300 314 294 309 L 261 278 L 261 222 Q 261 211 272 209 Z"/>
+    <path id="dpad-right-shape" d="M 431 312 Q 437 340 431 368 Q 429 379 418 379 L 362 379 L 331 346 Q 326 340 331 334 L 362 301 L 418 301 Q 429 301 431 312 Z"/>
+    <path id="dpad-down-shape" d="M 328 471 Q 300 477 272 471 Q 261 469 261 458 L 261 402 L 294 371 Q 300 366 306 371 L 339 402 L 339 458 Q 339 469 328 471 Z"/>
+    <path id="dpad-left-shape" d="M 169 368 Q 163 340 169 312 Q 171 301 182 301 L 238 301 L 269 334 Q 274 340 269 346 L 238 379 L 182 379 Q 171 379 169 368 Z"/>
+
+    <clipPath id="bodyClip"><use xlink:href="#body-shape"/></clipPath>
+    <clipPath id="wingClipL"><use xlink:href="#wing-left-shape"/></clipPath>
+    <clipPath id="wingClipR"><use xlink:href="#wing-right-shape"/></clipPath>
+    <clipPath id="touchpadClip"><use xlink:href="#touchpad-shape"/></clipPath>
+
+    <linearGradient id="shellGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcfcfd"/>
+      <stop offset="0.5" stop-color="#f1f2f5"/>
+      <stop offset="1" stop-color="#d7dbe1"/>
+    </linearGradient>
+    <radialGradient id="shellLight" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreGrad" cx="0.5" cy="0.3" r="0.65">
+      <stop offset="0" stop-color="#2d2f34"/>
+      <stop offset="1" stop-color="#141518"/>
+    </radialGradient>
+    <linearGradient id="touchpadGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8eaee"/>
+    </linearGradient>
+    <linearGradient id="darkPartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c3e44"/>
+      <stop offset="1" stop-color="#141518"/>
+    </linearGradient>
+    <linearGradient id="dpadGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3c42"/>
+      <stop offset="1" stop-color="#1b1c20"/>
+    </linearGradient>
+    <linearGradient id="rimLightGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a6e76"/>
+      <stop offset="0.5" stop-color="#6a6e76" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="faceGrad" cx="0.42" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#45484f"/>
+      <stop offset="1" stop-color="#18191d"/>
+    </radialGradient>
+    <linearGradient id="glossGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="wellGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.7" stop-color="#070708"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </radialGradient>
+    <radialGradient id="capRimGrad" cx="0.4" cy="0.32" r="0.72">
+      <stop offset="0" stop-color="#3b3e44"/>
+      <stop offset="1" stop-color="#1c1d21"/>
+    </radialGradient>
+    <radialGradient id="capDishGrad" cx="0.6" cy="0.68" r="0.75" fx="0.62" fy="0.74">
+      <stop offset="0" stop-color="#363940"/>
+      <stop offset="0.7" stop-color="#1f2024"/>
+      <stop offset="1" stop-color="#131417"/>
+    </radialGradient>
+    <linearGradient id="psGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="50">
+      <stop offset="0" stop-color="#2a2c31"/>
+      <stop offset="1" stop-color="#08090a"/>
+    </linearGradient>
+
+    <filter id="blur4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur8" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="blur14" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="blur24" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+
+  <g id="dualsense" transform="translate(200 170)">
+    <!-- 바닥 그림자 -->
+    <g id="shadow">
+      <use xlink:href="#body-shape" transform="translate(0 46)" fill="#000" opacity="0.2" filter="url(#blur24)"/>
+      <use xlink:href="#body-shape" transform="translate(0 14)" fill="#000" opacity="0.18" filter="url(#blur8)"/>
+    </g>
+
+    <!-- L2 / R2 트리거 -->
+    <g id="triggers" fill="url(#darkPartGrad)">
+      <path d="M 165 100 C 180 40 245 14 318 12 C 392 10 432 26 446 60 L 446 120 Z"/>
+      <path d="M 1435 100 C 1420 40 1355 14 1282 12 C 1208 10 1168 26 1154 60 L 1154 120 Z"/>
+    </g>
+
+    <!-- 검은 본체 -->
+    <g id="core">
+      <use xlink:href="#body-shape" fill="url(#coreGrad)"/>
+      <g clip-path="url(#bodyClip)">
+        <use xlink:href="#touchpad-shape" transform="translate(0 12)" fill="#000" opacity="0.55" filter="url(#blur8)"/>
+      </g>
+    </g>
+
+    <!-- 흰 셸 (좌우 날개) -->
+    <g id="shell" clip-path="url(#bodyClip)">
+      <use xlink:href="#wing-left-shape" fill="url(#shellGrad)"/>
+      <use xlink:href="#wing-right-shape" fill="url(#shellGrad)"/>
+      <ellipse cx="250" cy="300" rx="260" ry="210" fill="url(#shellLight)"/>
+      <ellipse cx="1350" cy="300" rx="260" ry="210" fill="url(#shellLight)"/>
+      <g clip-path="url(#wingClipL)">
+        <use xlink:href="#wing-left-shape" fill="none" stroke="#5f656e" stroke-width="34" opacity="0.32" filter="url(#blur14)"/>
+      </g>
+      <g clip-path="url(#wingClipR)">
+        <use xlink:href="#wing-right-shape" fill="none" stroke="#5f656e" stroke-width="34" opacity="0.32" filter="url(#blur14)"/>
+      </g>
+      <use xlink:href="#body-shape" fill="none" stroke="#5f656e" stroke-width="70" opacity="0.28" filter="url(#blur14)"/>
+      <!-- L1 / R1 범퍼 -->
+      <g fill="url(#darkPartGrad)" stroke="#0d0e10" stroke-width="3">
+        <path d="M 60 -40 L 478 -40 L 478 58 Q 478 76 458 77 C 330 78 200 80 140 110 C 100 130 68 152 38 178 L -40 178 L -40 -40 Z"/>
+        <path d="M 1540 -40 L 1122 -40 L 1122 58 Q 1122 76 1142 77 C 1270 78 1400 80 1460 110 C 1500 130 1532 152 1562 178 L 1640 178 L 1640 -40 Z"/>
+      </g>
+    </g>
+    <use xlink:href="#body-shape" fill="none" stroke="#9ba1a9" stroke-width="2.5"/>
+
+    <!-- 터치패드 -->
+    <g id="touchpad">
+      <use xlink:href="#touchpad-shape" fill="url(#touchpadGrad)"/>
+      <g clip-path="url(#touchpadClip)">
+        <use xlink:href="#touchpad-shape" fill="none" stroke="#7d838c" stroke-width="18" opacity="0.28" filter="url(#blur6)"/>
+      </g>
+      <use xlink:href="#touchpad-shape" fill="none" stroke="#b3b8c0" stroke-width="2"/>
+    </g>
+
+    <!-- 라이트 바 -->
+    <g id="lightbar" fill="none" stroke-linecap="round">
+      <g stroke="#2f7dff" stroke-width="20" opacity="0.5" filter="url(#glow)">
+        <use xlink:href="#lightbar-left-shape"/><use xlink:href="#lightbar-right-shape"/>
+      </g>
+      <g stroke="#4f9bff" stroke-width="8">
+        <use xlink:href="#lightbar-left-shape"/><use xlink:href="#lightbar-right-shape"/>
+      </g>
+      <g stroke="#dcecff" stroke-width="3">
+        <use xlink:href="#lightbar-left-shape"/><use xlink:href="#lightbar-right-shape"/>
+      </g>
+    </g>
+
+    <!-- 방향키 -->
+    <g id="dpad">
+      <g fill="#000" opacity="0.22" filter="url(#blur6)"><use xlink:href="#dpad-up-shape" transform="translate(2 10)"/><use xlink:href="#dpad-right-shape" transform="translate(2 10)"/><use xlink:href="#dpad-down-shape" transform="translate(2 10)"/><use xlink:href="#dpad-left-shape" transform="translate(2 10)"/></g>
+      <g fill="#1b1c1f" stroke="#1b1c1f" stroke-width="9" stroke-linejoin="round"><use xlink:href="#dpad-up-shape"/><use xlink:href="#dpad-right-shape"/><use xlink:href="#dpad-down-shape"/><use xlink:href="#dpad-left-shape"/></g>
+      <g fill="url(#dpadGrad)"><use id="dpad-up" xlink:href="#dpad-up-shape"/><use id="dpad-right" xlink:href="#dpad-right-shape"/><use id="dpad-down" xlink:href="#dpad-down-shape"/><use id="dpad-left" xlink:href="#dpad-left-shape"/></g>
+      <g fill="none" stroke="url(#rimLightGrad)" stroke-width="2"><use xlink:href="#dpad-up-shape"/><use xlink:href="#dpad-right-shape"/><use xlink:href="#dpad-down-shape"/><use xlink:href="#dpad-left-shape"/></g>
+      <g fill="#4a4d54"><path d="M 300 226 L 310 241 L 290 241 Z"/><path d="M 414 340 L 399 350 L 399 330 Z"/><path d="M 300 454 L 290 439 L 310 439 Z"/><path d="M 186 340 L 201 330 L 201 350 Z"/></g>
+    </g>
+
+    <!-- 액션 버튼 -->
+    <g id="face-buttons">
+      <g id="btn-triangle" transform="translate(1300 228)">
+        <circle cx="2" cy="10" r="56" fill="#000" opacity="0.22" filter="url(#blur6)"/>
+        <circle cx="0" cy="0" r="55" fill="#1b1c1f"/>
+        <circle cx="0" cy="0" r="50" fill="url(#faceGrad)"/>
+        <circle cx="0" cy="0" r="49" fill="none" stroke="url(#rimLightGrad)" stroke-width="2"/>
+        <g fill="none" stroke="#c9cdd4" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"><path d="M 0 -22 L 20 13 L -20 13 Z"/></g>
+        <ellipse cx="-4" cy="-25" rx="31" ry="16" fill="url(#glossGrad)"/>
+      </g>
+      <g id="btn-circle" transform="translate(1412 340)">
+        <circle cx="2" cy="10" r="56" fill="#000" opacity="0.22" filter="url(#blur6)"/>
+        <circle cx="0" cy="0" r="55" fill="#1b1c1f"/>
+        <circle cx="0" cy="0" r="50" fill="url(#faceGrad)"/>
+        <circle cx="0" cy="0" r="49" fill="none" stroke="url(#rimLightGrad)" stroke-width="2"/>
+        <g fill="none" stroke="#c9cdd4" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="19"/></g>
+        <ellipse cx="-4" cy="-25" rx="31" ry="16" fill="url(#glossGrad)"/>
+      </g>
+      <g id="btn-cross" transform="translate(1300 452)">
+        <circle cx="2" cy="10" r="56" fill="#000" opacity="0.22" filter="url(#blur6)"/>
+        <circle cx="0" cy="0" r="55" fill="#1b1c1f"/>
+        <circle cx="0" cy="0" r="50" fill="url(#faceGrad)"/>
+        <circle cx="0" cy="0" r="49" fill="none" stroke="url(#rimLightGrad)" stroke-width="2"/>
+        <g fill="none" stroke="#c9cdd4" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"><path d="M -16 -16 L 16 16 M 16 -16 L -16 16"/></g>
+        <ellipse cx="-4" cy="-25" rx="31" ry="16" fill="url(#glossGrad)"/>
+      </g>
+      <g id="btn-square" transform="translate(1188 340)">
+        <circle cx="2" cy="10" r="56" fill="#000" opacity="0.22" filter="url(#blur6)"/>
+        <circle cx="0" cy="0" r="55" fill="#1b1c1f"/>
+        <circle cx="0" cy="0" r="50" fill="url(#faceGrad)"/>
+        <circle cx="0" cy="0" r="49" fill="none" stroke="url(#rimLightGrad)" stroke-width="2"/>
+        <g fill="none" stroke="#c9cdd4" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"><rect x="-16" y="-16" width="32" height="32"/></g>
+        <ellipse cx="-4" cy="-25" rx="31" ry="16" fill="url(#glossGrad)"/>
+      </g>
+    </g>
+
+    <!-- 아날로그 스틱 -->
+    <g id="sticks">
+      <g id="stick-left">
+        <circle cx="565" cy="575" r="136" fill="url(#wellGrad)"/>
+        <circle cx="565" cy="575" r="136" fill="none" stroke="#44474d" stroke-width="3"/>
+        <circle cx="570" cy="591" r="104" fill="#000" opacity="0.6" filter="url(#blur8)"/>
+        <circle cx="565" cy="575" r="101" fill="url(#capRimGrad)"/>
+        <g fill="#41444a"><circle cx="655" cy="575" r="3.8"/><circle cx="653.9" cy="589.1" r="3.8"/><circle cx="650.6" cy="602.8" r="3.8"/><circle cx="645.2" cy="615.9" r="3.8"/><circle cx="637.8" cy="627.9" r="3.8"/><circle cx="628.6" cy="638.6" r="3.8"/><circle cx="617.9" cy="647.8" r="3.8"/><circle cx="605.9" cy="655.2" r="3.8"/><circle cx="592.8" cy="660.6" r="3.8"/><circle cx="579.1" cy="663.9" r="3.8"/><circle cx="565" cy="665" r="3.8"/><circle cx="550.9" cy="663.9" r="3.8"/><circle cx="537.2" cy="660.6" r="3.8"/><circle cx="524.1" cy="655.2" r="3.8"/><circle cx="512.1" cy="647.8" r="3.8"/><circle cx="501.4" cy="638.6" r="3.8"/><circle cx="492.2" cy="627.9" r="3.8"/><circle cx="484.8" cy="615.9" r="3.8"/><circle cx="479.4" cy="602.8" r="3.8"/><circle cx="476.1" cy="589.1" r="3.8"/><circle cx="475" cy="575" r="3.8"/><circle cx="476.1" cy="560.9" r="3.8"/><circle cx="479.4" cy="547.2" r="3.8"/><circle cx="484.8" cy="534.1" r="3.8"/><circle cx="492.2" cy="522.1" r="3.8"/><circle cx="501.4" cy="511.4" r="3.8"/><circle cx="512.1" cy="502.2" r="3.8"/><circle cx="524.1" cy="494.8" r="3.8"/><circle cx="537.2" cy="489.4" r="3.8"/><circle cx="550.9" cy="486.1" r="3.8"/><circle cx="565" cy="485" r="3.8"/><circle cx="579.1" cy="486.1" r="3.8"/><circle cx="592.8" cy="489.4" r="3.8"/><circle cx="605.9" cy="494.8" r="3.8"/><circle cx="617.9" cy="502.2" r="3.8"/><circle cx="628.6" cy="511.4" r="3.8"/><circle cx="637.8" cy="522.1" r="3.8"/><circle cx="645.2" cy="534.1" r="3.8"/><circle cx="650.6" cy="547.2" r="3.8"/><circle cx="653.9" cy="560.9" r="3.8"/></g>
+        <circle cx="565" cy="575" r="78" fill="url(#capDishGrad)"/>
+        <circle cx="565" cy="575" r="78" fill="none" stroke="#0b0c0e" stroke-width="3"/>
+        <circle cx="565" cy="575" r="100" fill="none" stroke="url(#rimLightGrad)" stroke-width="2.5"/>
+      </g>
+      <g id="stick-right">
+        <circle cx="1035" cy="575" r="136" fill="url(#wellGrad)"/>
+        <circle cx="1035" cy="575" r="136" fill="none" stroke="#44474d" stroke-width="3"/>
+        <circle cx="1040" cy="591" r="104" fill="#000" opacity="0.6" filter="url(#blur8)"/>
+        <circle cx="1035" cy="575" r="101" fill="url(#capRimGrad)"/>
+        <g fill="#41444a"><circle cx="1125" cy="575" r="3.8"/><circle cx="1123.9" cy="589.1" r="3.8"/><circle cx="1120.6" cy="602.8" r="3.8"/><circle cx="1115.2" cy="615.9" r="3.8"/><circle cx="1107.8" cy="627.9" r="3.8"/><circle cx="1098.6" cy="638.6" r="3.8"/><circle cx="1087.9" cy="647.8" r="3.8"/><circle cx="1075.9" cy="655.2" r="3.8"/><circle cx="1062.8" cy="660.6" r="3.8"/><circle cx="1049.1" cy="663.9" r="3.8"/><circle cx="1035" cy="665" r="3.8"/><circle cx="1020.9" cy="663.9" r="3.8"/><circle cx="1007.2" cy="660.6" r="3.8"/><circle cx="994.1" cy="655.2" r="3.8"/><circle cx="982.1" cy="647.8" r="3.8"/><circle cx="971.4" cy="638.6" r="3.8"/><circle cx="962.2" cy="627.9" r="3.8"/><circle cx="954.8" cy="615.9" r="3.8"/><circle cx="949.4" cy="602.8" r="3.8"/><circle cx="946.1" cy="589.1" r="3.8"/><circle cx="945" cy="575" r="3.8"/><circle cx="946.1" cy="560.9" r="3.8"/><circle cx="949.4" cy="547.2" r="3.8"/><circle cx="954.8" cy="534.1" r="3.8"/><circle cx="962.2" cy="522.1" r="3.8"/><circle cx="971.4" cy="511.4" r="3.8"/><circle cx="982.1" cy="502.2" r="3.8"/><circle cx="994.1" cy="494.8" r="3.8"/><circle cx="1007.2" cy="489.4" r="3.8"/><circle cx="1020.9" cy="486.1" r="3.8"/><circle cx="1035" cy="485" r="3.8"/><circle cx="1049.1" cy="486.1" r="3.8"/><circle cx="1062.8" cy="489.4" r="3.8"/><circle cx="1075.9" cy="494.8" r="3.8"/><circle cx="1087.9" cy="502.2" r="3.8"/><circle cx="1098.6" cy="511.4" r="3.8"/><circle cx="1107.8" cy="522.1" r="3.8"/><circle cx="1115.2" cy="534.1" r="3.8"/><circle cx="1120.6" cy="547.2" r="3.8"/><circle cx="1123.9" cy="560.9" r="3.8"/></g>
+        <circle cx="1035" cy="575" r="78" fill="url(#capDishGrad)"/>
+        <circle cx="1035" cy="575" r="78" fill="none" stroke="#0b0c0e" stroke-width="3"/>
+        <circle cx="1035" cy="575" r="100" fill="none" stroke="url(#rimLightGrad)" stroke-width="2.5"/>
+      </g>
+    </g>
+
+    <!-- 플레이어 표시등 (1P) -->
+    <g id="player-leds" fill="#3a3c41">
+      <circle cx="740" cy="452" r="5.5"/>
+      <circle cx="770" cy="452" r="5.5"/>
+      <circle cx="830" cy="452" r="5.5"/>
+      <circle cx="860" cy="452" r="5.5"/>
+      <circle cx="800" cy="452" r="14" fill="#fff" opacity="0.55" filter="url(#blur4)"/>
+      <circle cx="800" cy="452" r="6" fill="#fff"/>
+    </g>
+
+    <!-- PS 버튼 -->
+    <g id="ps-button" transform="translate(800 532) scale(1.12)" stroke-linejoin="round">
+      <use xlink:href="#ps-logo-shape" fill="#5b5f67" stroke="#5b5f67" stroke-width="5" fill-rule="evenodd"/>
+      <use xlink:href="#ps-logo-shape" fill="url(#psGrad)" fill-rule="evenodd"/>
+    </g>
+
+    <!-- 음소거 버튼 -->
+    <rect id="mute-button" x="762" y="618" width="76" height="24" rx="12" fill="#0e0f11" stroke="#50535a" stroke-width="2"/>
+
+    <!-- 만들기 / 옵션 버튼 -->
+    <g id="create-button">
+      <g transform="translate(486 142) rotate(-16)">
+        <rect x="-16" y="-40" width="32" height="80" rx="16" fill="#000" opacity="0.25" filter="url(#blur4)" transform="translate(2 7)"/>
+        <rect x="-16" y="-40" width="32" height="80" rx="16" fill="url(#darkPartGrad)" stroke="#0d0e10" stroke-width="2"/>
+      </g>
+      <g transform="translate(432 112)" fill="none" stroke="#a4a9b1" stroke-width="3.5" stroke-linecap="round">
+        <path d="M -9 -8 L -4 1 M 0 -11 L 0 0 M 9 -8 L 4 1"/>
+      </g>
+    </g>
+    <g id="options-button">
+      <g transform="translate(1114 142) rotate(16)">
+        <rect x="-16" y="-40" width="32" height="80" rx="16" fill="#000" opacity="0.25" filter="url(#blur4)" transform="translate(-2 7)"/>
+        <rect x="-16" y="-40" width="32" height="80" rx="16" fill="url(#darkPartGrad)" stroke="#0d0e10" stroke-width="2"/>
+      </g>
+      <g transform="translate(1168 112)" fill="none" stroke="#a4a9b1" stroke-width="3.5" stroke-linecap="round">
+        <path d="M -9 -7 L 9 -7 M -9 0 L 9 0 M -9 7 L 9 7"/>
+      </g>
+    </g>
+  </g>
+</svg>
