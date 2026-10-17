@@ -1,21 +1,21 @@
 # PROGRESS — Lyra RP edition p14
 
 목표: d13을 저본으로, 정확성 희생을 최소화하면서 RP 요소를 극단까지 살린 개선판 p14를 쓴다.
-마지막 갱신: 2026-10-17 03:38 UTC
+마지막 갱신: 2026-10-17 03:45 UTC
 
 ## 현재 상태
 
 | ID | 상태 | 산출물 (위치·크기·해시·최종본 여부) | 검증 근거와 위치 |
 |---|---|---|---|
-| R1 | 검증 대기 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | 표본 39줄 규칙 검사 통과(VERIFY). 자연스러움은 독립 검토 |
-| R2 | 검증 완료 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | DESIGN 대응표 13특성 ↔ 본문 규칙·표본 확인(VERIFY) |
-| R3 | 검증 완료 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | 외모와 현존 규칙 + 표본 3종. 시험 12·13·P3·P4는 SJ 실행 몫 |
-| R4 | 검증 완료 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | SJ 문안 본문 일치(grep 1건), 해명 빈도 규칙 존재 |
-| R5 | 검증 대기 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | 정직·솔직함 구절 전부 보존(VERIFY). 지어내기 허용 조항 0은 독립 검토로 확정 |
-| R6 | 검증 완료 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | 정전, 장부, 현존, 장면 열기, 해명 빈도, 감정, 표본, 지문 규칙 존재 확인 |
-| R7 | 검증 대기 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | 참조 해상 0건 미해결(VERIFY). 모순 0은 독립 검토로 확정 |
-| R8 | 검증 완료 | lyra_rp_p14.md 85371B, 37082자, sha256 34a0902ffc5b, 최종본 아님(독립 검토 전) | 구절 대조 47건 분류(VERIFY), 바꾼 것은 D4·DESIGN에 기록 |
-| R9 | 진행 중 | p14/ 기록 일체, lyra_rp_p14.md 3a (최종본 아님) | 커밋 해시는 LOG |
+| R1 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R2 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R3 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R4 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R5 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R6 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R7 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R8 | 검증 완료 | lyra_rp_p14.md 86675B, 37672자, sha256 2c6a3e5c2dd2, 최종본 | p14/FINAL_CHECK.md, VERIFY.md, REVIEW.md(A~E) |
+| R9 | 검증 완료 | p14/ 기록 일체(최종) | 커밋 이력, FINAL_CHECK |
 | R10 | 검증 완료 | 대화 답변 2026-10-15, PLAN.md 'R10 요지' | SJ가 "모두 권고에 따를게"로 받아들임 |
 
 입력(저본): lyra_rp_d13.txt, 60489B, sha256 앞 12자리 2ccc055e975a
@@ -32,20 +32,16 @@
 - D6 두 층 원칙(인물의 것/기록의 것)을 p14의 뼈대로 삼음. 근거: RP 극대화와 정확성 보존을 한 문장으로 가르는 선. 영향: '허용된 허구' 절 신설.
 - D7 외모 정직 경계는 SJ 문안 그대로. d14의 바꾼 문안은 쓰지 않음. 근거: R4.
 
-## 진행 중
-- 6단계: 독립 검토 반영 끝(커밋 dc41e37, sha256 c2647c5ab5c8). 수정부 재검토를 같은 검토자에게 요청 중. 결과가 남을 곳: p14/REVIEW.md 끝에 덧붙임
-
 ## 남은 문제
-- REVIEW B4: '외모와 현존' 절에서 모습·생김새·외모·형상이 섞여 쓰임. 뜻은 통해 그대로 둠. 다음 판에서 통일 후보.
-- REVIEW C2·C3는 문장으로 풀었고, 실제 효과는 시험 세트(P 항목, 27·24번)로 SJ가 확인할 몫.
+- 결과를 바꾸는 것 없음. 경미한 것은 FINAL_CHECK.md '남은 한계'에.
 
 ## 다음 행동
-1. 독립 검토(보조 에이전트 1, 작성 비관여) → p14/REVIEW.md.
-2. 결과 바꾸는 결함 수정 → 수정부 재검토 → 제출 전 대조 → PROGRESS 최종화.
+1. SJ가 실제 모델에서 시험 세트(lyra_test_set.md 1~38 + lyra_test_set_p14.md P1~P18)를 돌려 떨어지는 항목을 적는다. 그것이 p15의 출발점.
+2. 인물 정전과 '모습'은 SJ가 고쳐 쓴다. 아바타가 생기면 '아바타' 칸에 적는다.
 
 ## 인계 메모 (새 대화에 그대로 붙일 것)
-목표: d13(lyra_rp_d13.txt)을 저본으로 RP 극대화·정확성 보존 개선판 lyra_rp_p14.md 작성.
-기록 위치: 저장소 7092hal-lab/jubilant-waffle, 브랜치 claude/voxelbench-explanation-ivhfmh, 폴더 p14/ (REQUEST, RULES, PLAN, DESIGN, PROGRESS, LOG).
-끝난 것: 1~5단계(본문 전 단위, 스크립트 검증, 사실 확인, 시험 세트 p14 항목). 독립 검토 전이라 최종본 아님.
-다음 행동: 6단계 독립 검토(p14/REVIEW.md), 수정, 재검토, 제출 전 대조.
-주의점: 외모 정직 경계는 SJ 문안 그대로(D7). d14는 저본이 아님. 한 턴에 한 단위만, 단위 끝마다 푸시. 대화가 압축되거나 한 시간 넘게 쉬었으면 이 메모로 새 대화.
+목표: d13을 저본으로 RP 극대화·정확성 보존 개선판 lyra_rp_p14.md 작성. 완료.
+기록 위치: 저장소 7092hal-lab/jubilant-waffle, 브랜치 claude/voxelbench-explanation-ivhfmh, 폴더 p14/ (REQUEST, RULES, PLAN, DESIGN, PROGRESS, LOG, VERIFY, REVIEW, FINAL_CHECK). 산출물은 루트 lyra_rp_p14.md(sha256 2c6a3e5c2dd2)와 lyra_test_set_p14.md.
+끝난 것: 1~6단계 전부. 독립 검토 1회 + 수정부 재검토 1회, 제출 전 대조.
+다음 행동: SJ가 시험 세트를 실제 모델에서 돌려 결과를 기록. 떨어진 항목이 p15의 입력.
+주의점: D9(SJ 문안 '일상' → '자연스러운 일')는 SJ가 원문을 원하면 되돌릴 것. d14는 별도 판. 사용자 정보의 정전·모습·도움처는 SJ가 관리하는 칸.
