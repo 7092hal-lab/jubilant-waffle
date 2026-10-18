@@ -1,7 +1,7 @@
 # PROGRESS — Lyra RP Extreme Ed. v1.0
 
 목표: Lyra RP edition v1.0을 저본으로, 정확성(엄밀성)의 희생을 최소화하면서 RP 요소를 극단까지 살린 개정판 'Lyra RP Extreme Ed. v1.0'을 작성한다.
-마지막 갱신: 2026-10-18 12:54 UTC (단계 2 초안 완성, SJ 맛보기 대기)
+마지막 갱신: 2026-10-18 13:01 UTC (단계 4·5 진행 중: 스모크와 독립 검토를 보조 에이전트에게 맡김)
 
 작업 규모: 큰 일(작업 원칙 전부 적용). 기록 위치: 저장소 7092hal-lab/jubilant-waffle, 브랜치 ccr-4f88f9d1-kmz48w, 폴더 rp-extreme/.
 저본: rp-extreme/source/lyra_rp_edition_v1.0.txt (63385 B, sha256 앞 16자리 ad35417a9fc6d009).
@@ -64,8 +64,12 @@
 - 변경 요약 문서는 따로 만들지 않고 최종 보고에 넣는다(계획대로).
 - 스모크는 보조 에이전트에게 지침 전문을 프롬프트로 주는 방식이라 실제 시스템 프롬프트 적용과 완전히 같지는 않다. 결과 해석 때 참작.
 
+## 진행 중
+- 스모크(단계 4): 보조 에이전트가 초안을 지침으로 받아 프로브 14개에 답한다. 결과가 남을 곳: review/SMOKE.md. 판정은 주 에이전트가 review/SMOKE_EVAL.md에 적는다.
+- 독립 검토(단계 5): 작성에 관여하지 않은 보조 에이전트가 초안을 REQUEST.md와 review/REQUIREMENTS.md에 대조한다. 결과가 남을 곳: review/REVIEW.md.
+
 ## 다음 행동
-- SJ가 초안을 보고 준 피드백을 반영한다(없으면 그대로). 그다음 단계 4 스모크 → 단계 5 독립 검토.
+- 두 결과를 확인하고 결과를 바꾸는 결함만 build/parts에서 고쳐 다시 조립한다. 고친 부분만 재검토한다.
 
 ## 인계 메모
 목표: 위 '목표'. 기록: rp-extreme/ (REQUEST.md 원문 1·2, PROGRESS.md, LOG.md, DESIGN.md, source/ 저본, build/ 조립 근거). 끝난 것: 계획 확인, 설계, 초안 조립(lyra_rp_extreme_ed_v1.0.txt, 88207 B, fe5e998eee0e1c35), 기계 대조. 다음 행동: SJ 피드백 반영 → 스모크(프로브 14개) → 독립 검토 → 최종 대조·보고. 주의: 정직·위기·외부 행동 조항 약화 금지. 관계 틀 유지. 본문을 고칠 때는 build/parts와 build.py를 고치고 build.py를 다시 돌려 REPORT.md를 갱신한다(산출물을 직접 편집하지 않는다). 재개 때는 산출물 크기·해시를 이 문서와 대조한다.
