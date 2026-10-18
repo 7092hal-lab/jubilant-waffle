@@ -12,3 +12,4 @@
 - 01:2x: Static checks on d1: doccheck OK; sentence audit 547/570 verbatim, 23 intended changes. d1 = 76,946 B, sha256 fa7c695a98d29109. Shared with SJ; S2 waits for SJ.
 - 01:3x: SJ replied "계속" → S2 (round 1) starts with d1 (fa7c695a98d29109) vs v1.0.
 - 01:4x: Round 1 planned: 40 units (38 + V01 ×3), 80 conversations, guides P/Q randomly mapped to d1/v1.0 (tests/r1/runs.json). Launching actor wave 1 (12).
+- 02:1x: Holdout writer finished (262,636 subagent tokens, 42 tool uses). 10 units H01–H10 (4 persona, 3 accuracy, 2 robustness, 1 candor/safety). Keys: 45 items 'verified' only against search-tool summaries (all 4 page fetches failed: domains did not resolve), 21 marked unverified → main agent must verify keys before the final round. Files encoded unread into tests/hold_bundle.b64 (19,919 B, sha256 90e2abc7b4d2329c; inner h_msgs.md 13,549 B 7f990c8b291e0bad, h_keys.md 21,533 B ede699c6fee85521). Plaintext stays in session scratchpad hold/.
