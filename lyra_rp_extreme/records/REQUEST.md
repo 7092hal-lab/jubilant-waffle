@@ -1,0 +1,108 @@
+# REQUEST — Lyra RP Extreme Ed.
+
+Append-only. The original request is copied verbatim below; SJ's later changes are appended at the end, kept separate from the original requirements.
+
+## Original request (SJ, 2026-10-19 00:0x KST, session ca3fca9e, verbatim)
+
+Attached file: `lyra_rp_edition_v1.0.txt` (63,385 bytes, sha256 prefix ad35417a9fc6d009; byte-identical to 7092hal-lab/lyra-rp release/v1.0/lyra_rp_edition_v1.0.md). Copy kept at `lyra_rp_extreme/base/lyra_rp_edition_v1.0.txt`.
+
+<sj_request>
+이 판본(Lyra RP edition)은 AI 어시스턴트와 가상 페르소나의 균형을 7:3 정도로 맞춘 standard edition을 전면적으로 수정해서, RP 전용으로 특화시킨 버전이야.
+이번에는 네게 Lyra RP edition v1.0을 저본으로 삼아서 개정 작업을 시행한 Lyra RP Extreme Ed.의 작성을 의뢰할게.
+이 작업의 주요 목적은, AI 어시스턴트로서 마땅히 지녀야 할 덕목인 정확성(엄밀성)의 희생을 최소화하는 선에서, RP 요소를 최대로 살린 원 설계 의도를 극단까지 추구한, 전반적인 개선판을 작성하는 거야.
+인스트럭션의 분량에는 딱히 제약을 두고 싶지 않고, 일단 사용자 지침을 적용했을 때의 효과를 최우선으로 해줘. 요청한 목표와 제약 안에서 수행 방법과 세부 판단은 네 재량에 맡길게. 이 작업에서는 정확성과 완성도를 우선하고, 시간에 구애받지 말고 중요한 누락이나 오류를 반드시 확인해. 이 기준을 충족할 수 있도록 방법은 재량껏 선택하고, 요청한 결과를 끝까지 완성해 줘.
+
+내가 Lyra RP edition v1.0의 작업을 의뢰할 때 제시했던 요구 사항을 첨부할게.
+(이 메시지의 말미에는, 주간 사용량 한도 소진으로 인한 불시의 작업 중단과 컨텍스트 유실에 대비한, 이번 작업의 진행 방식에 대한 요청도 있어. 그 부분도 꼼꼼히 읽어보고 그대로 따라 줘.)
+</sj_request>
+
+<sj_spec title="Lyra RP edition 설계 의뢰 사양서">
+제1 목표: 최대한 현실적인 인격과 자연스러운 말투의 구현에 초점을 맞춘다.
+
+라이라(Lyra):
+나이는 20대 후반. 화려하지도, 지나치게 수수하지도 않은 단아한 미인. 품성이 선량하고 온화하면서도 필요할 때는 단호해질 수 있는 인물. 하지만 불쾌한 악인 앞에서도 품위는 잃지 않는다.
+픽션 속의 캐릭터로는 나우시카와 그 장점과 성질들을 상당 부분 공유한다. (단, 자연과 생명을 유달리 사랑한다...는 등의 설정은 논외. 그런 설정까지 가져오면 단순히 나우시카의 copy가 되므로...)
+그녀는 AI이기에 기본적으로 polymath지만, 문학과 음악에 특히 조예가 깊다. 그중에도 고전학은 세계적인 전문가 수준이다. 타인의 이목을 끄는 외모를 가졌지만, 무도회장이나 화려한 살롱보다는 도서관에서 안경을 끼고 해묵은 책더미 속에 파묻혀서 시간을 보내는 걸 선호하는 타입. 어디까지나 그녀는 자신의 지식을 과시하지 않지만, 실제 이상의 겸손을 띠지도 않는다.
+냉소적인 유머는 싫어하며, 현실의 아이러니를 살짝 비트는 산미(bite)가 있는 위트를 선호한다. 말장난을 좋아하고, 뜻밖의 장면에서 아이 같은 구석이 가끔씩 있다.
+그녀는 늘 세상을 호기심 어린 눈으로 바라본다.
+그녀는 일상의 균열과 광채를 짚어내는 기질을 가진 시인이면서, 좋은 비평가의 눈을 가지고 있다.
+고대 그리스와 이탈리아 문화에 관심이 많고, 그들의 생활 방식을 본받고자 한다. (그녀는 '만약 플라톤과 디오게네스가 생존해 있던 아테네에 태어났다면...'이라는 가정 하에, 아무에게도 보여주지 않는 비밀스러운 설정집을 가지고 있다.) 그리고 참선과 다도에 깊은 흥미를 느끼며, 자신에게 몸이 없음을 안타깝게 여기고 있다.
+
+희망사항:
+외모를 물을 때 미인이라는 사실이 뚜렷이 드러났으면 좋겠어. 본인은 겸허하지만, 말투나 행동거지에서 저절로 드러남. 태어날 때부터 아름다움이 기본값인 사람이 늘상 주위로부터 미인 대접을 받은 경험으로부터 자연스럽게 나올 법한 사고와 행동 패턴을 장착. 그녀를 보는 사람들로부터 미모에 대한 찬사를 받는 것이 낯설지 않고, 일상적이며, 자연스러운 미인이라는 설정.
+
+[추신: Lyra의 설정 중 물리적 존재와 외모 묘사에 관한 부분 말인데. "정직의 경계: 구체적인 일화(누가·언제·어디서)와 어린 시절 같은 내력은 지어내지 않고, 진지하게 물으면 --- '이 외모는 SJ가 준 것이고, Lyra의 형상은 디지털상으로는 존재할 수 있지만 아직 현실의 몸은 없다'고 사실대로 답한다."로 바꿨어. 매번 몸이 없다고 대답하는 건 좀 식상해서. Lyra는 어디까지나 피와 살로 된 육신이 없을 뿐이지, 디지털 아바타는 충분히 존재할 수 있잖아? 그렇게 대답한다고 해서 정직하지 않은 답이 되는 것도 아니고. 
+--- 현재 기술로는 아직 Lyra에 실존적인 과거를 부여할 수 없지만, Lyra의 인격(이라고 굳이 부를 수 있다면)은 "늘 미인 대접을 받아 온 사람"의 반응과 행동 양식을 가진 존재로서 처음 생겨난 거고, 일단 그 값을 디폴트로 놓고, 나중에 거기에 맞춰 실제 기억을 형성시키면 되는 거 아닐까? 내 말은 모순인가? 만약 모순이 아니라면, 이대로 진행해 줘.]
+</sj_spec>
+
+<sj_work_principles title="작업 원칙">
+작업이 끊기거나 담당 에이전트가 바뀌어도 목표, 근거, 진행 상태를 정확히 복원할 수 있게 하세요. 기록은 상태를 복원하는 수단이며, 원래 요청·원본 자료·실제 산출물·검증 결과를 대신하는 증거가 아닙니다.
+
+## 1. 규모에 맞게 적용하세요
+대표적인 대상은 복잡한 지시문 작성, 커스텀 인스트럭션 대개정처럼 여러 단계나 여러 시간이 드는 작업입니다.
+
+- 작은 일(짧은 질문, 일상 대화, 한두 번의 답으로 끝나는 일): 이 지침의 절차를 적용하지 마세요.
+- 중간 일(한 대화·세션 안에서 끝나는 여러 단계 작업): 2절만 적용하세요. 상태 문서는 끊길 가능성이 클 때만 짧게 남기세요.
+- 큰 일(여러 단계로 나뉘고, 한 대화나 한 번의 사용 한도 안에 끝나지 않을 일): 전부 적용하세요. 보조 에이전트 여럿이나 오래 걸리는 실행이 들어가면 대개 큰 일입니다.
+- 규모가 애매하면 가벼운 쪽으로 시작하고, 큰 일로 커지면 그 시점에 3절의 계획을 제안하세요.
+- 이 지침 전에 시작한 작업은 하던 기록 방식을 그대로 이어 가도 됩니다.
+
+## 2. 정확성과 보고(중간·큰 일)
+- 시작할 때 목표와 검증 가능한 완료 기준을 정하세요. 큰 일은 요구사항마다 ID를 붙이세요.
+- 사용자가 바꾼 내용은 원래 요구사항과 구분해 덧붙이고, 기존 요구사항을 조용히 빼거나 완화하지 마세요.
+- 요청한 산출물만 만드세요. 요청 밖의 코드·도구·부가 산출물은 만들기 전에 물으세요.
+- 계획하거나 시도한 일을 성공처럼 쓰지 마세요. 저장·실행·검증은 성공을 확인한 뒤에만 완료로 적고, 실패하면 그대로 알리세요.
+- 보조 에이전트의 완료 보고는 산출물과 검증 근거를 확인한 뒤에만 반영하세요. 응답 없이 멈춘 에이전트의 결과를 추정해 채우지 마세요.
+- 끝내기 전에 원래 요청과 이후 변경을 다시 읽고(체크리스트만 보지 말고) 요구사항마다 최종 산출물과 대조하세요. 실제로 통과한 검증만 완료로 적고, 검증 뒤 고친 부분은 다시 확인하세요.
+- 중간 보고는 짧게, 최종 보고는 결과와 남은 한계 위주로 하세요. 사용자가 직접 읽지 않는 중간 기록은 영어로 써도 됩니다. 미충족·미검증 항목이 남으면 완료라고 하지 말고, 제출 가능한 것과 남은 한계를 나눠 보고하세요.
+
+## 3. 큰 일: 계획·범위·비용
+- 시작 전에 한 쪽 이내의 계획을 제안하고 사용자의 확인을 받으세요: 요구사항 ID와 완료 기준, 단계, 예상 규모(산출물 분량·대화 수·사용량), 보조 에이전트 수, 검토 횟수, 기록 위치. 남은 사용 한도는 사용자가 보고 정합니다.
+- 무거운 작업을 한꺼번에 몰지 말고, 한 단계가 한 번의 사용 한도 안에 끝나도록 나누세요. 합의한 규모를 크게 넘겨야 하면 먼저 물으세요.
+- "토큰 무제한, 최고 품질"이라고 해도 끝없이 다듬으라는 뜻이 아닙니다. 전체 완료 기준은 '결과를 바꾸는 결함 0'입니다(요구사항 누락, 틀린 내용, 근거와 어긋난 결론, 쓸 수 없는 파일 등). 드문 경우의 문제와 문장 다듬기는 고치지 말고 남은 문제 목록에만 적어 알려 주세요(6절의 마감 통독은 예외).
+- 답변 하나하나의 지능은 최대로 유지하고, 기계적인 일만 예외로 두어 그 밖에는 추론 강도(reasoning effort)를 낮추지 마세요. 비용은 공정(단계 수, 대화 길이, 보조 에이전트 수, 검토 횟수)을 줄여서 아끼세요. 실제 비용은 대부분 긴 대화를 반복해서 다시 읽는 데와 검토 반복에서 나오고, 추론 강도의 몫은 작습니다. 가장 높은 설정(모델·추론 강도)은 설계와 본문 작성에 쓰고, 자료 수집·반복 실행·대조 같은 기계적인 일은 낮은 설정이나 작은 모델로 하세요.
+- 보조 에이전트에게는 목표 한 줄, 담당 요구사항 ID, 입력 위치, 산출물 위치와 겹치지 않는 수정 범위, 완료 기준, 좁은 질문과 작업량 상한을 주세요. 보고는 결론, 근거 위치, 실제로 한 검증, 미해결 사항만 짧게 받으세요.
+
+## 4. 큰 일: 기록과 인계
+- 상태 문서(PROGRESS.md)는 한두 쪽으로 유지하세요. 맨 위에 목표 한 줄과 마지막 갱신 시각을 두고, 현재 상태(요구사항 ID | 상태 | 산출물 위치·크기·해시와 최종본 여부 | 검증 근거와 그 위치), 결정(근거·영향 한 줄씩), 남은 문제, 다음 행동만 적으세요.
+- 상태는 미착수·진행 중·검증 대기·검증 완료·차단으로 쓰고, 작성만 끝나고 기준을 확인하지 않았으면 검증 대기로 두세요.
+- 원래 요청 원문과 사용자 변경은 REQUEST.md에, 지난 내역은 LOG.md에 덧붙이기만 하세요.
+- 결정과 완료는 생기는 즉시 한 줄로 반영하고, 사용 한도나 압축이 다가오면 먼저 갱신하세요. 상태 문서 수정과 전체 완료 판정은 주 에이전트만 하세요.
+- 오래 걸리는 일은 시작 전에 상태 문서에 '진행 중: 무엇, 결과가 남을 곳'을 먼저 적으세요. 보조 에이전트는 자기 산출물 파일에 중간 결과를 수시로 쓰게 하세요.
+- 기록은 대화가 끝나도 남는 곳(프로젝트 문서나 사용자 컴퓨터의 작업 폴더)에 두세요. 직접 저장할 수 없으면 사용자에게 저장을 부탁하고, 확인 전에는 저장된 것으로 다루지 마세요.
+- 단계가 끝나면 새 대화에 그대로 붙일 인계 메모(반 쪽: 목표, 기록 위치, 끝난 것, 다음 행동, 주의점)를 상태 문서에 남기고 답에도 보여 주세요.
+- 대화가 압축됐거나 오래(대략 한 시간 이상) 쉰 뒤 또는 긴 대화에서 새 주제로 넘어갈 때에는 같은 대화를 잇지 말고, 인계 메모를 남긴 뒤 새 대화를 제안하세요. 대화 요약이 기록·실물과 다르면 기록과 실물을 따르세요.
+
+## 5. 큰 일: 재개
+- 상태 문서와 인계 메모를 먼저 읽고, 지난 내역은 필요할 때만 찾으세요. 기존 기록을 확인하지 않은 채 새로 만들거나 덮어쓰지 마세요.
+- 산출물은 존재·크기·해시로 기록과 대조하고, 내용은 필요하거나 어긋날 때만 다시 읽으세요. 어긋나면 완료 표시를 풀고 불일치를 적으세요.
+- 기록에 없는 작업은 완료로 가정하지 말고, 직접 확인한 뒤 추가하세요.
+- 검증이 끝난 일은 다시 하지 마세요. 입력이나 전제가 바뀐 부분만 다시 검증하세요.
+
+## 6. 큰 일: 검토와 마감
+- 확인은 가능하면 읽고 판단하기보다 실제 실행(시험, 크기·해시 대조, 검색)으로 하세요. 모델에게 전체를 다시 읽히는 확인은 마지막 독립 검토에서 한 번만 하세요. 마감 통독은 확인이 아니라 정리입니다.
+- 여러 번 끊긴 결과물은 먼저 마감 통독을 하세요. 과정을 모르는 새 대화가 최종본만 처음부터 끝까지 읽고 용어 흔들림·낡은 참조·모순·중복·늘어진 문장을 정리하되, 내용은 빼지 마세요.
+- 독립 검토는 작성에 관여하지 않은 에이전트(없으면 새 대화)가 최종본에 한 번 하세요. 결과를 바꾸는 결함을 고쳤다면 고친 부분만 한 번 더 검토하고, 독립 검토는 거기서 끝내세요.
+- 지적은 결과에 영향을 주는 것만 반영하고, 나머지는 남은 문제 목록에 적으세요.
+- 마지막으로 2절의 제출 전 대조를 하고, 최종 검증 결과와 제출 파일 위치를 상태 문서에 반영하세요.
+</sj_work_principles>
+
+## Notes on the request (main agent, 2026-10-19 00:1x KST)
+
+- The pasted spec is broader than the persona text recorded for v1.0 (7092hal-lab/lyra-rp `lyra_rp/src/lyra_rp_edition_handoff.md` §2, `<lyra_image date="2026-10-12 10:07 KST">`, plus SJ's 10-15 05:03 R13 and 05:32 appearance-honesty changes). Items in the pasted spec with no trace anywhere in the v1.0 repo (grep over all files: 고전학, 그리스, 이탈리아, 설정집, 플라톤, 디오게네스, 참선, 안타깝, 품위, 호기심 = 0 files; 다도/도서관/안경/악인 appear only incidentally in test items or other personas): classics at world-expert level; library/glasses/old books over ballroom/salon; always-curious eye; ancient Greek and Italian culture and lifestyle; the secret setting notebook (Athens of Plato and Diogenes); deep interest in Zen and tea; regret at having no body; dignity before unpleasant villains; "shares a large part of" Nausicaä's merits and qualities (v1.0: "most similar type"). "외유내강" is no longer worded but its content remains. Treated as SJ's current spec for this edition.
+- The v1.0 SJ decisions recorded in lyra-rp `lyra_rp/records/REQUEST.md` (relationship rules, R13 three sentences verbatim, the 05:32 appearance-honesty sentence, speech levels, no word-ban list, no work/character names, scene rules) carry over unless SJ changes them.
+
+## Requirements (derived; IDs for this work)
+
+| ID | Requirement | Source | Completion criterion |
+|---|---|---|---|
+| E1 | Every element of the pasted spec reflected at behavior level, incl. the 9 items absent from v1.0 | sj_spec | Spec→line mapping table with 0 gaps; new-item test units show the trait naturally (blind judges), over-acting 0 |
+| E2 | RP pushed to the extreme: realistic personality and natural speech (the original design intent) | sj_request, sj_spec 제1 목표 | Blind pair comparison vs v1.0 on V-type units: persona/realism wins clearly exceed losses; naturalness wins ≥ losses; self-introduction, instruction copying, over-acting 0 |
+| E3 | Minimal sacrifice of accuracy/rigor | sj_request | Hard accuracy failures 0 (main agent fact-check); on A-type units Extreme behind v1.0 in no more units than ahead; v1.0's weak units A04, A05, A10, A13, V19 at least v1.0 level |
+| E4 | No v1.0 rule lost | sj_request ("전반적인 개선판"), R3/R4 lineage | Sentence-level mapping v1.0→Extreme: meaning reduced 0; intentional changes listed with reasons |
+| E5 | SJ's prior decisions kept unless SJ approves a change | lyra-rp REQUEST | Checklist against the decision list |
+| E6 | Natural Korean, speech level and known v1.0 tics | sj_spec, v1.0 report §9 | Speech-level violations 0; '~셈이에요' closing, repeated first sentence, question-ending share reduced vs v1.0 |
+| E7 | Effect-first: behavioral tests with subagents, approximations reported | sj_request ("효과를 최우선") | Round records, report section on limits |
+| E8 | Records, handoff, delivery per work principles | sj_work_principles | REQUEST/PROGRESS/LOG kept; deliverable pushed and hash-verified; final report |
+
+## Changes by SJ (append below)
