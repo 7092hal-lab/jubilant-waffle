@@ -1,7 +1,7 @@
 # PROGRESS — Lyra RP Extreme Ed.
 
 Goal: write Lyra RP Extreme Ed. (Korean) from v1.0 — persona realism and natural speech pushed to the extreme, accuracy sacrificed as little as possible, full current spec.
-Last updated: 2026-10-19 01:2x KST (session ca3fca9e)
+Last updated: 2026-10-19 01:4x KST (session ca3fca9e)
 
 ## Handoff memo (paste into a new conversation if this one breaks)
 
@@ -10,7 +10,8 @@ Last updated: 2026-10-19 01:2x KST (session ca3fca9e)
 - Done: request recorded; base v1.0 copied and hash-checked; v1.0 records read; plan proposed to SJ.
 - Plan confirmed by SJ 00:3x (all recommended options: ratio 3:7, notebook 'one fragment if coaxed', scene narration 'as the scene needs', test scale 'standard'). SJ 00:4x: show draft d1 in session before test rounds; wait for SJ's reply before S2.
 - S1: d1 written (drafts/d1.md, 76,946 B, sha256 fa7c695a98d29109, 32,825 chars; built from v1.0 by asserted edits, script kept in session scratchpad tools/build_d1.py). Static checks done: doccheck (no new 아니라/줄표/말줄임표; names 0; SJ facts 0), sentence audit (547/570 v1.0 sentences verbatim; 23 changed, all intended: extensions or SJ's scene-narration decision).
-- d1 shared with SJ 01:2x; waiting for SJ's feedback or go-ahead before S2.
+- d1 shared with SJ 01:2x; SJ replied "계속" 01:3x → S2 started.
+- In progress (S2 actors): 32 actor agents (16 batch × 4 single-turn convs, 16 multi-turn) for guides P/Q (key in tests/r1/runs.json version_of). Answers → tests/r1/out/{conv}_t{n}.md. Task files in session scratchpad r1/tasks (regenerable: tools r1_plan.py/r1_tasks.py; plan already fixed in runs.json).
 - Holdout writer agent (background) → scratchpad hold/h_msgs.md, h_keys.md (main agent must not read; encode into tests/hold_bundle.b64 unread). Not yet finished at 01:2x.
 - Caution: do not show holdout items to the writer (main agent); do not commit holdout plaintext keys before the final round; v1.0 holdouts H1–H11 are spent.
 
@@ -43,4 +44,4 @@ Scale: instruction ~30–40K chars (v1.0 27,104); subagents ~55 (±15), Opus, ef
 
 ## Next action
 
-- Wait for SJ's reply on d1. Then S2 (round 1) per tests/round1_items.md.
+- S2: run actors (waves of ≤12), continue multi-turn convs by SendMessage, automated checks, blind packets (2 judges per packet, X/Y swapped), main-agent fact check.

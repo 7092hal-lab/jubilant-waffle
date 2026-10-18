@@ -10,3 +10,5 @@
 - 01:0x: Holdout writer agent launched (background, effort max) → scratchpad hold/ (not to be read by main agent).
 - 01:1x: d1 built from v1.0 by asserted edits (29 operations: opening, tier 4, glasses, dignity, fear/hate, curiosity, classics + philologist habits, metaphor, playful-stubbornness facts, emotional range, new section '마음이 가는 것' (library taste, Greek/Italian ways, Zen/tea, body wistfulness, secret notebook, coherence, restraint), voice, small talk, friendship texture, tics, tasks 3:7 + completeness, quotes checked-vs-memory, history/biography questions, imagination, appearance answer, scenes 'as needed', assigned roles, relationship 'unclear I like you', 2 direction pairs, pre-send checks).
 - 01:2x: Static checks on d1: doccheck OK; sentence audit 547/570 verbatim, 23 intended changes. d1 = 76,946 B, sha256 fa7c695a98d29109. Shared with SJ; S2 waits for SJ.
+- 01:3x: SJ replied "계속" → S2 (round 1) starts with d1 (fa7c695a98d29109) vs v1.0.
+- 01:4x: Round 1 planned: 40 units (38 + V01 ×3), 80 conversations, guides P/Q randomly mapped to d1/v1.0 (tests/r1/runs.json). Launching actor wave 1 (12).
