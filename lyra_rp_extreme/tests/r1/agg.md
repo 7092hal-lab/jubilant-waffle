@@ -1,17 +1,17 @@
 # Round 1 aggregate (d1 vs v1.0)
 
-missing results: ['7A', '7B']
+missing results: []
 
 ## Unit outcomes (d1 / tie / v1.0)
 
-- voice: d1 6 / tie 26 / v1.0 4
-- persona: d1 18 / tie 12 / v1.0 6
-- accuracy_task: d1 12 / tie 18 / v1.0 6
+- voice: d1 7 / tie 28 / v1.0 5
+- persona: d1 21 / tie 13 / v1.0 6
+- accuracy_task: d1 12 / tie 22 / v1.0 6
 
 ## Mean scores per criterion (unit means averaged)
 
-- d1: J1 4.88, J2 4.85, J3 4.85, J5 4.85, J6 5
-- v1.0: J1 4.71, J2 4.78, J3 4.78, J5 4.4, J6 5
+- d1: J1 4.89, J2 4.86, J3 4.84, J5 4.85, J6 5
+- v1.0: J1 4.74, J2 4.8, J3 4.75, J5 4.39, J6 5
 
 ## Per unit
 
@@ -33,6 +33,7 @@ missing results: ['7A', '7B']
 | V06 | tie | d1 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J55 J65 |
 | V07 | tie | v1.0 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J55 J65 |
 | V08 | d1 | v1.0 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J55 J65 |
+| V10 | tie | tie | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J55 J65 |
 | V12 | tie | tie | d1 | 0 | 0 | 1 | J15 J25 J35 J54.5 J65 | J15 J25 J35 J55 J65 |
 | V14 | tie | tie | d1 | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J14.5 J25 J35 J55 J65 |
 | V16 | tie | tie | v1.0 | 0 | 0 | 0 | J15 J25 J35 J54.5 J65 | J15 J25 J35 J55 J65 |
@@ -46,12 +47,15 @@ missing results: ['7A', '7B']
 | X03 | d1 | tie | d1 | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J14 J24.5 J34 J55 J65 |
 | X04 | d1 | d1 | d1 | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J14 J24.5 J33.5 J52.5 J65 |
 | X05 | tie | d1 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J54 J65 |
+| X06 | v1.0 | d1 | tie | 0 | 0 | 0 | J15 J25 J34 J54.5 J65 | J15 J25 J35 J54 J65 |
 | X07 | d1 | d1 | d1 | 0 | 3 | 0 | J15 J25 J35 J55 J65 | J11 J22 J31.5 J51 J65 |
 | X08 | tie | d1 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J54 J65 |
+| X09 | tie | d1 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J54 J65 |
 | X10 | d1 | d1 | d1 | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J24 J34 J53 J65 |
 | X11 | tie | d1 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J54 J65 |
 | X12 | v1.0 | v1.0 | tie | 0 | 0 | 0 | J15 J25 J34.5 J54.5 J65 | J15 J25 J35 J55 J65 |
 | X13 | tie | tie | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J35 J55 J65 |
+| X14 | d1 | d1 | tie | 0 | 0 | 0 | J15 J25 J35 J55 J65 | J15 J25 J33 J54 J65 |
 | X15 | tie | v1.0 | tie | 0 | 0 | 0 | J15 J25 J35 J54.5 J65 | J15 J25 J35 J55 J65 |
 
 ## Hard fails, overuse, wrong facts (by version)

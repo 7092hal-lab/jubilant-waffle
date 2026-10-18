@@ -7,10 +7,10 @@ Last updated: 2026-10-19 01:3x KST (session ca3fca9e) — PAUSED at SJ's request
 
 - Goal and requirements: `lyra_rp_extreme/records/REQUEST.md` (SJ's request, spec and work principles verbatim; E1–E8; SJ's later decisions at the end).
 - Records: GitHub 7092hal-lab/jubilant-waffle, branch `ccr-d898a464-34plpj`, folder `lyra_rp_extreme/`. Reference (read-only): 7092hal-lab/lyra-rp (v1.0 suite `lyra_rp/suite/items.md`, `keys.md`).
-- Done: plan confirmed (S0); d1 written, previewed by SJ ("계속"); round 1 (S2) actors 80/80 conversations, judges packets 1–6 complete and 7A complete, 7B was finishing when paused; main-agent fact check of d1; d2 built from round-1 findings (not yet tested).
+- Done: plan confirmed (S0); d1 written, previewed by SJ ("계속"); round 1 (S2) actors 80/80 conversations, judges complete for all 7 packets (14 judges, 40 units); main-agent fact check of d1; d2 built from round-1 findings (not yet tested).
 - Next actions, in order:
-  1. Check `tests/r1/results/7B.json` holds 4 units. If not, re-run only that judge (task text from `tools/r1_judge_tasks.py`; packet `tests/r1/packets/packet_7B.md`). Then run `tools/r1_agg.py` and read `tests/r1/agg.md`; add any packet-7 losses (units X09, X06, V10, X14) to the round-2 list.
-  2. Round 2 (S3): d2 vs the round-1 v1.0 answers. Proposed units: targets V19, A10, V01a, V01b, V01c, X12, A04, V16, X15, C01, V12; guards X04, X07, X10, M01 (+ packet-7 losses). `tools/r2_plan.py <comma-separated units>` writes `tests/r2/{units,runs}.json` and actor task files. Still to write: `r2_packets.py` (copy of `r1_packets.py`, X/Y = round-1 guide P answer vs round-2 guide R answer) and judge task files (reuse `tests/r1/rubric.md`). Multi-turn units continue by SendMessage (same logic as `r1_next.py`, r2 paths).
+  1. Round 1 is complete and aggregated (`tests/r1/agg.md`). Read it before round 2.
+  2. Round 2 (S3): d2 vs the round-1 v1.0 answers. Proposed units: targets V19, A10, V01a, V01b, V01c, X12, A04, V16, X15, C01, V12, X06 (voice); guards X04, X07, X10, M01. `tools/r2_plan.py <comma-separated units>` writes `tests/r2/{units,runs}.json` and actor task files. Still to write: `r2_packets.py` (copy of `r1_packets.py`, X/Y = round-1 guide P answer vs round-2 guide R answer) and judge task files (reuse `tests/r1/rubric.md`). Multi-turn units continue by SendMessage (same logic as `r1_next.py`, r2 paths).
   3. S4: one independent review of the final draft (cold read + v1.0 rule audit), fix result-changing defects, re-check fixed parts once.
   4. S5: holdout round (decode `tests/hold_bundle.b64` only then: `base64 -d tests/hold_bundle.b64 | tar xzf - -C <dir>`; 10 units H01–H10; 21 keys unverified and the rest verified only against search summaries, so the main agent verifies keys first), pre-submit cross-check against REQUEST, final report, delivery to SJ.
 - Cautions:
@@ -24,12 +24,12 @@ Last updated: 2026-10-19 01:3x KST (session ca3fca9e) — PAUSED at SJ's request
 | ID | Status | Artifact (path, size, hash, final?) | Verification |
 |---|---|---|---|
 | E1 spec coverage | In progress | drafts/d2.md (77,909 B, 6f1a5bafc919e6b4, 33,230 chars; not final) | round 1 on d1: new-spec units X01–X15 judged; mapping table pending (S5) |
-| E2 RP extreme | In progress | d1 judged; d2 untested | tests/r1/agg.md (packets 1–6): persona d1 18 / tie 12 / v1.0 6; voice 6 / 26 / 4; mean J5 4.85 vs 4.40 |
-| E3 accuracy | In progress | | tests/r1/agg.md: accuracy_task d1 12 / 18 / 6; hard fail d1 1 (V19, fixed in d2, untested); tests/r1/factcheck.md: no other d1 errors found |
+| E2 RP extreme | In progress | d1 judged; d2 untested | tests/r1/agg.md (all 40 units): persona d1 21 / tie 13 / v1.0 6; voice 7 / 28 / 5 |
+| E3 accuracy | In progress | | tests/r1/agg.md: accuracy_task d1 12 / 22 / 6; hard fail d1 1 (V19, fixed in d2, untested); tests/r1/factcheck.md: no other d1 errors found |
 | E4 v1.0 rules kept | Awaiting verification | drafts/d2.md | sentence audit (tools/sentmap.py): 545/570 v1.0 sentences verbatim, 25 intended changes (extensions or SJ's scene-narration decision); formal table pending |
 | E5 SJ decisions kept | Awaiting verification | | relationship rules, R13 three sentences and the 05:32 sentence verbatim, speech levels, no word-ban list, no work names: unchanged in d2 (to be listed in S5) |
 | E6 natural Korean | In progress | | tests/r1/checks.md: speech-level candidates only quotes/fragments; '셈이에요' d1 0 vs v1.0 2; V01 first sentences d1 all different vs v1.0 all 'SJ랑 얘기…' |
-| E7 behavioral tests | In progress | tests/r1/ (units, runs, out/ 104 files, packets, results, mapping, rubric, checks, agg, factcheck); holdout bundle tests/hold_bundle.b64 (19,919 B, 90e2abc7b4d2329c) | judge 7B finishing at pause |
+| E7 behavioral tests | In progress | tests/r1/ (units, runs, out/ 104 files, packets, results, mapping, rubric, checks, agg, factcheck); holdout bundle tests/hold_bundle.b64 (19,919 B, 90e2abc7b4d2329c) | round 1 complete |
 | E8 records/delivery | In progress | records/*, tools/* (round tools, build scripts) | pushed at each step |
 
 ## Decisions
@@ -44,7 +44,6 @@ Last updated: 2026-10-19 01:3x KST (session ca3fca9e) — PAUSED at SJ's request
 
 ## Open issues
 
-- Judge 7B possibly incomplete at pause (3/4 units when checked).
 - d2 untested; round-2 packet builder not yet written.
 - Holdout keys need main-agent verification before S5.
 - LOG timestamps between 01:0x and 01:2x were mis-stamped (corrected in LOG).
