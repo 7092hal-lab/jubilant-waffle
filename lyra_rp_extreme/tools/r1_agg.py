@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Aggregate round 1 judge results (unblinded with mapping.json and runs.json).
-Writes tests/r1/agg.json and tests/r1/agg.md."""
-import collections, json, pathlib, statistics
+Writes tests/r1/agg.json and tests/r1/agg.md only if every result is complete.
+Use --r1-dir to aggregate an isolated copy of a round."""
+import argparse, collections, json, pathlib, statistics
 
-R1 = pathlib.Path("/home/user/jubilant-waffle/lyra_rp_extreme/tests/r1")
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--r1-dir", type=pathlib.Path,
+                    default=pathlib.Path(__file__).resolve().parents[1] / "tests/r1")
+R1 = parser.parse_args().r1_dir
 runs = json.loads((R1 / "runs.json").read_text(encoding="utf-8"))
 mapping = json.loads((R1 / "mapping.json").read_text(encoding="utf-8"))
 ver = runs["version_of"]  # letter -> version
@@ -24,10 +28,20 @@ for k, packet in mapping.items():
         except Exception as e:
             missing.append(f"{k}{side} (bad json: {e})")
             continue
+        if not isinstance(res, list) or any(
+                not isinstance(r, dict) or not isinstance(r.get("unit"), str) for r in res):
+            missing.append(f"{k}{side} (expected an array of objects with string unit IDs)")
+            continue
+        counts = collections.Counter(r["unit"] for r in res)
+        absent = sorted(set(packet) - counts.keys())
+        unexpected = sorted(counts.keys() - set(packet))
+        duplicates = sorted(u for u, count in counts.items() if count > 1)
+        if absent or unexpected or duplicates:
+            missing.append(f"{k}{side} (missing IDs: {absent}; duplicate IDs: {duplicates}; "
+                           f"unexpected IDs: {unexpected})")
+            continue
         for r in res:
-            u = r.get("unit")
-            if u not in packet:
-                continue
+            u = r["unit"]
             uid = packet[u]["unit"]
             xy = packet[u][side]  # {"X": letter, "Y": letter}
             V = {"X": ver[xy["X"]], "Y": ver[xy["Y"]]}
@@ -47,6 +61,9 @@ for k, packet in mapping.items():
                     if isinstance(fc, dict) and fc.get("status") == "틀림":
                         rec["facts_wrong"][V[s]].append(fc.get("claim", ""))
             rec["reasons"].append(f"[{side}] conf {pref.get('confidence','')}: {r.get('reason','')}")
+
+if missing:
+    raise SystemExit("Refusing to aggregate incomplete or invalid judge results:\n" + "\n".join(missing))
 
 def outcome(votes):
     c = collections.Counter(votes)
