@@ -1,7 +1,7 @@
 # PROGRESS.md — Lyra RP Extreme Ed.
 
 목표: RP edition v1.0을 저본으로, 정확성(엄밀성)의 희생을 최소화하면서 RP 요소를 극단까지 살린 Lyra RP Extreme Ed. 사용자 지침(.txt)을 완성한다.
-마지막 갱신: 2026-10-19 (1단계 계획·기록)
+마지막 갱신: 2026-10-19 (2단계 초안 완성, 3단계 업로드 진행)
 
 ## 요구사항 ID와 완료 기준
 
@@ -42,8 +42,8 @@
 
 | ID | 상태 | 산출물 | 검증 근거 |
 |---|---|---|---|
-| R1~R5, R7 | 미착수 | lyra_rp_extreme/lyra_rp_extreme_ed_v1.0_draft.txt (예정) | — |
-| R6 | 진행 중 | 기록 파일 3종 | 푸시 결과(LOG) |
+| R1~R5, R7 | 검증 대기 | lyra_rp_extreme/lyra_rp_extreme_ed_v1.0_draft.txt (82179 bytes, 35192자, sha256 앞 16자리 cec7f3ba89630eae, 최종본 아님) | 구조 검사만 통과(절 순서, 중복 문단 0, 빈 줄 정상). 스모크 테스트·독립 검토 전 |
+| R6 | 진행 중 | 기록 3종 푸시됨, 초안 파일 카드 전송·Doc 게시(이 단계) | LOG |
 
 ## 결정
 
@@ -59,4 +59,4 @@
 
 ## 다음 행동
 
-초안 작성(2단계). 결과가 남을 곳: lyra_rp_extreme/lyra_rp_extreme_ed_v1.0_draft.txt
+진행 중: 4단계 다중 검토(새 에이전트 3, 병렬). 결과가 남을 곳: lyra_rp_extreme/reviews/A_smoke_test.md, B_independent_review.md, C_style_effect.md
